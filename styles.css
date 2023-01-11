@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: #ddf3ff;
+}
+
+.container{
+    width: 80%;
+    margin: 10px auto;
+    min-width: 450px;
+    background-color: rgb(249, 239, 152);
+    min-height: 400px;
+}
+
+#newtask{
+    position: relative;
+    padding: 0px 15px 20px;
+    background-color: brown;
+}
+
+#newtask input{
+    width: 85%;
+    margin-top: 15px;
+    padding: 12px;
+    color: #111111;
+    font-weight: 500;
+    position: relative;
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    border: 2px solid #d1d3d4;
+}
+
+#newtask p{
+    text-align: center;
+    float: right;
+    font-size: 60px;
+    margin-top: 5px;
+    color: rgb(16, 158, 16);
+    cursor: pointer;
+    width: 5%;
+    height: 100%;
+    min-width: 50px;
+    font-family: 'Poppins',sans-serif;
+    user-select: none;
+}
+
+#newtask p:active{
+    color: white;
+}
+
+#tasks{
+    width: 100%;
+    position: relative;
+    padding: 30px 20px;
+}
+
+.task{
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 10px 10px;
+    line-height: 0%;
+    margin-bottom: 20px;
+    display: flex;
+    border-bottom: 1px solid rgb(119, 173, 87);
+}
+
+.task:last-child{
+    margin-bottom: 0px;
+}
+
+.task span{
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.task span.delete{
+    cursor: pointer;
+    outline: none;
+    font-size: 20px;
+    user-select: none;
+}
+
+.task span.delete:active{
+    color: red;
+}
+
+footer{
+    text-align: center;
+}
